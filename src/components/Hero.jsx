@@ -2,6 +2,13 @@ import { useState, useEffect, useRef } from 'react';
 import { portfolioData } from '../data/portfolioData';
 import { useMousePosition } from '../utils/useMousePosition';
 
+const roles = [
+  "4th Year CSIT Undergraduate",
+  "MERN Stack Developer",
+  "Full-Stack Developer",
+  "Problem Solver"
+];
+
 export default function Hero() {
   const [typedText, setTypedText] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
@@ -10,13 +17,6 @@ export default function Hero() {
   
   const imageCardRef = useRef(null);
   const mousePos = useMousePosition(imageCardRef);
-
-  const roles = [
-    "Full-Stack Developer",
-    "CSIT Undergraduate",
-    "Problem Solver",
-    "Tech Enthusiast"
-  ];
 
   // Typewriter effect
   useEffect(() => {
@@ -58,7 +58,7 @@ export default function Hero() {
         <div className="hero-info-panel">
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            Available for Internships
+            4th Year CSIT • Open to Opportunities
           </div>
           
           <h1 className="hero-title">

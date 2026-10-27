@@ -35,17 +35,34 @@ export default function Terminal() {
       case 'help':
         response = [
           { text: 'Available commands:', type: 'output' },
-          { text: '  about    - Show professional bio and background', type: 'output' },
-          { text: '  skills   - List technical skills by category', type: 'output' },
-          { text: '  projects - List featured development projects', type: 'output' },
-          { text: '  resume   - Open resume PDF in a new tab', type: 'output' },
-          { text: '  clear    - Clear terminal history', type: 'output' },
+          { text: '  about      - Show professional bio and background', type: 'output' },
+          { text: '  experience - View internship and industry experience', type: 'output' },
+          { text: '  skills     - List technical skills by category', type: 'output' },
+          { text: '  projects   - List featured development projects', type: 'output' },
+          { text: '  resume     - Open resume PDF in a new tab', type: 'output' },
+          { text: '  clear      - Clear terminal history', type: 'output' },
         ];
+        break;
+      case 'experience':
+        response = [
+          { text: 'Professional Experience:', type: 'output' }
+        ];
+        if (portfolioData.experience) {
+          portfolioData.experience.forEach(exp => {
+            response.push({ text: `> ${exp.role} @ ${exp.company}`, type: 'output-header' });
+            response.push({ text: `  Location: ${exp.location} | Period: ${exp.period} (${exp.duration})`, type: 'output' });
+            response.push({ text: `  Details: ${exp.description}`, type: 'output' });
+            if (exp.tech) {
+              response.push({ text: `  Tech: ${exp.tech.join(', ')}`, type: 'output' });
+            }
+          });
+        }
         break;
       case 'about':
         response = [
           { text: `Name: ${portfolioData.personal.name}`, type: 'output' },
           { text: `Title: ${portfolioData.personal.title}`, type: 'output' },
+          { text: `Year: ${portfolioData.personal.year || '4th Year Undergraduate'}`, type: 'output' },
           { text: `Bio: ${portfolioData.personal.bio}`, type: 'output' },
           { text: `Location: ${portfolioData.personal.location}`, type: 'output' }
         ];

@@ -37,7 +37,7 @@ export default function Contact() {
       } else {
         alert("Submission failed: " + data.message + ". Please make sure you have added your Web3Forms Access Key in Contact.jsx!");
       }
-    } catch (error) {
+    } catch {
       alert("An error occurred. Please check your connection and try again.");
     } finally {
       setIsSubmitting(false);

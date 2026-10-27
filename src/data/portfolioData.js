@@ -2,8 +2,9 @@ export const portfolioData = {
   personal: {
     name: "Isha Singh Bhadouria",
     title: "Full-Stack Developer & CSIT Undergraduate",
-    subtitle: "3rd Year B.Tech Student | Tech Enthusiast",
-    bio: "I am a passionate 3rd-year Computer Science & Information Technology undergraduate student at Symbiosis University of Applied Sciences. I specialize in building modern, responsive web applications and love exploring the intersection of design, clean code, and interactive technologies.",
+    subtitle: "4th Year B.Tech Student | MERN Stack Developer",
+    year: "4th Year Undergraduate",
+    bio: "I am a passionate 4th-year Computer Science & Information Technology undergraduate student at Symbiosis University of Applied Sciences. In my 3rd year, I completed an internship at Webseeder Technologies Private Ltd., Indore specializing in the MERN stack. I build modern, performant, and responsive full-stack applications with clean code and interactive experiences.",
     location: "India",
     email: "ishasinghbhadoriya16@gmail.com",
     resumeUrl: "/resume.pdf", // Pointing to local resume.pdf in public folder
@@ -29,10 +30,13 @@ export const portfolioData = {
   ],
   experience: [
     {
-      role: "Web Development Intern",
-      company: "Webseeder Technologies",
+      role: "MERN Stack Developer Intern",
+      company: "Webseeder Technologies Private Ltd.",
+      location: "Indore, India",
+      period: "3rd Year",
       duration: "Summer 2025",
-      description: "Worked on building and optimizing web applications, collaborating with the development team to deliver high-quality web solutions."
+      description: "Worked as a MERN stack developer intern designing and developing full-stack web applications. Built interactive, responsive user interfaces with React.js, implemented RESTful API services with Node.js and Express.js, and handled data models and queries with MongoDB.",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs", "Git"]
     }
   ],
   timeline: [
@@ -43,13 +47,18 @@ export const portfolioData = {
     },
     {
       year: "Year 2 (2024 - 2025)",
-      title: "Web Essentials",
-      description: "Mastered HTML, CSS, and JavaScript. Developed interactive user interfaces, responsive web layouts, and participated in college hackathons."
+      title: "Web Essentials & Frontend",
+      description: "Mastered HTML, CSS, JavaScript, and modern UI design. Developed interactive user interfaces, responsive layouts, and participated in college hackathons."
     },
     {
       year: "Year 3 (2025 - 2026)",
-      title: "Full-Stack & Internship",
-      description: "Specialized in the MERN stack (MongoDB, Express, React, Node.js). Completed a summer internship at Webseeder Technologies building production-ready web interfaces."
+      title: "MERN Stack & Internship at Webseeder",
+      description: "Specialized in the MERN stack (MongoDB, Express, React, Node.js). Completed an internship at Webseeder Technologies Private Ltd., Indore, developing robust full-stack web solutions and production-ready applications."
+    },
+    {
+      year: "Year 4 (2026 - 2027)",
+      title: "Final Year & Advanced Engineering (Current)",
+      description: "Currently in 4th year undergraduate focusing on advanced full-stack architecture, scalable systems, capstone project development, and preparing for industry software engineering roles."
     }
   ],
   skills: [
